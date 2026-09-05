@@ -1,5 +1,11 @@
 # Change history
 
+## 3.0.3, 2026-09-05
+
+- Added clickable public feed links to the RSS Feed configuration page for shop owners.
+- Fixed repeated undefined `$rssAuthor` warnings by resolving the optional author inside product and recursive category generation functions.
+- Added the standard `templates/tpl_rss_feed_default.php` page template required by current Zen Cart storefront templates. This prevents the generated feed from falling through to the HTML storefront and failing on a missing template.
+
 ## 3.0.2, 2026-09-05
 
 - Fixed the feed endpoint HTTP 500 by loading the feed class and guard from the active encapsulated plugin directory.

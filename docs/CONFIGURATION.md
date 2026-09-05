@@ -2,6 +2,8 @@
 
 Settings are under **Configuration > RSS Feed**.
 
+The first setting displays clickable URLs for the available public feeds. Shop owners can open a link to test its output or copy the address into a feed reader or integration.
+
 | Setting | Default | Purpose |
 | --- | ---: | --- |
 | Feed cache time | 15 minutes | Reuses generated XML instead of repeating catalog queries. |
