@@ -2,7 +2,7 @@
 
 RSS Feed generates RSS 2.0 feeds for Zen Cart products, categories, new products, best sellers, specials, featured products, upcoming products, and supported news installations.
 
-Version 3.0.1 modernizes the 2012 release for Zen Cart 2.0.x through 2.2.x and PHP 8.0 through 8.5. It is an encapsulated Plugin Manager package with no core or template overwrites.
+Version 3.0.2 modernizes the 2012 release for Zen Cart 2.0.x through 2.2.x and PHP 8.0 through 8.5. It is an encapsulated Plugin Manager package with no core or template overwrites.
 
 ## Bot and cache protection
 
@@ -15,7 +15,7 @@ Version 3.0.1 modernizes the 2012 release for Zen Cart 2.0.x through 2.2.x and P
 - Atomic cache writes prevent partial XML files.
 - `ETag`, `Last-Modified`, `Cache-Control`, and HTTP 304 responses reduce repeated transfers.
 
-The defaults are 15 minutes of server caching, 250 maximum requested items, and 120 requests per IP address per minute. These can be changed under **Configuration > RSS Feed**.
+The defaults are 15 minutes of server caching, 250 maximum requested items, and 30 requests per IP address per minute. These can be changed under **Configuration > RSS Feed**.
 
 ## Installation
 

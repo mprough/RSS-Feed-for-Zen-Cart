@@ -2,9 +2,14 @@
 
 declare(strict_types=1);
 
-require __DIR__ . '/../files/zc_plugins/RssFeed/v3.0.1/catalog/includes/functions/extra_functions/rss_feed_guard.php';
+define('DIR_WS_IMAGES', 'images/');
+define('DIR_FS_CATALOG', sys_get_temp_dir() . '/rss-feed-catalog-' . getmypid() . '/');
+define('HTTP_SERVER', 'https://example.com');
+define('DIR_WS_CATALOG', '/store/');
 
-$language = require __DIR__ . '/../files/zc_plugins/RssFeed/v3.0.1/catalog/includes/languages/english/extra_definitions/lang.rss_feed.php';
+require __DIR__ . '/../files/zc_plugins/RssFeed/v3.0.2/catalog/includes/functions/extra_functions/rss_feed_guard.php';
+
+$language = require __DIR__ . '/../files/zc_plugins/RssFeed/v3.0.2/catalog/includes/languages/english/extra_definitions/lang.rss_feed.php';
 assert(is_array($language));
 assert(($language['TEXT_RSS_FEED'] ?? null) === 'RSS Feed');
 
@@ -19,6 +24,14 @@ $request = prowebs_rss_normalize_request([
 assert($request === ['feed' => 'products', 'limit' => 250, 'cPath' => '12_34']);
 assert(prowebs_rss_normalize_request(['feed' => 'invalid'], 250)['feed'] === 'new_products');
 assert(prowebs_rss_normalize_request(['products_id' => '-9'], 250)['products_id'] === 0);
+
+assert(prowebs_rss_contact_value('editor@example.com (Feed Editor)') === 'editor@example.com (Feed Editor)');
+assert(prowebs_rss_contact_value('Feed Editor <editor@example.com>') === 'editor@example.com (Feed Editor)');
+assert(prowebs_rss_contact_value('') === false);
+assert(prowebs_rss_contact_value('not-an-email') === false);
+assert(prowebs_rss_channel_image_url('https://cdn.example.com/channel.png') === 'https://cdn.example.com/channel.png');
+assert(prowebs_rss_channel_image_url('javascript:channel.png') === false);
+assert(prowebs_rss_channel_image_url('channel.svg') === false);
 
 $first = prowebs_rss_cache_key(['feed' => 'products', 'limit' => 10], 1, 'USD');
 $second = prowebs_rss_cache_key(['limit' => 10, 'feed' => 'products'], 1, 'USD');

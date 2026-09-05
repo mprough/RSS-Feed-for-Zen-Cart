@@ -1,5 +1,14 @@
 # Change history
 
+## 3.0.2, 2026-09-05
+
+- Fixed the feed endpoint HTTP 500 by loading the feed class and guard from the active encapsulated plugin directory.
+- Normalized legacy HTML entities in text settings so ampersands do not expand after editing.
+- Clarified that the channel image accepts a full HTTP or HTTPS URL, or a path relative to the catalog images directory. Invalid and missing images are omitted.
+- Made the three public email fields optional, validated their RSS address format, documented address-harvesting risk, and stopped publishing the store owner email by default.
+- Reduced the default per-IP request limit from 120 to 30 requests per minute. Existing untouched 120-request defaults migrate to 30.
+- Replaced exact inventory quantities with `in stock` or `out of stock` availability.
+
 ## 3.0.1, 2026-09-05
 
 - Converted the catalog language file to the required returned-array format. This prevents `ArraysLanguageLoader::loadArrayDefineFile()` from receiving integer `1` and causing an HTTP 500 on Zen Cart 2.1.x storefront pages immediately after installation.

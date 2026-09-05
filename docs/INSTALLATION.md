@@ -18,7 +18,7 @@ The package uses `template_default` fallbacks and does not overwrite a storefron
 
 Plugin Manager detects the existing `RSS Feed` configuration group and preserves its values. It adds the new cache and throttling settings, updates the installed version, and repairs the Configuration menu entry.
 
-After confirming version 3.0.0 works, compare and remove the old loose RSS files previously copied under `includes`. The historical file list is available in `docs/archive/readme-v2.1.6.txt`. Do not remove the Plugin Manager files under `zc_plugins/RssFeed`.
+After confirming the current version works, compare and remove the old loose RSS files previously copied under `includes`. The historical file list is available in `docs/archive/readme-v2.1.6.txt`. Do not remove the Plugin Manager files under `zc_plugins/RssFeed`.
 
 ## Uninstall
 
