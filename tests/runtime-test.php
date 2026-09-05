@@ -7,9 +7,9 @@ define('DIR_FS_CATALOG', sys_get_temp_dir() . '/rss-feed-catalog-' . getmypid() 
 define('HTTP_SERVER', 'https://example.com');
 define('DIR_WS_CATALOG', '/store/');
 
-require __DIR__ . '/../files/zc_plugins/RssFeed/v3.0.4/catalog/includes/functions/extra_functions/rss_feed_guard.php';
+require __DIR__ . '/../files/zc_plugins/RssFeed/v3.0.5/catalog/includes/functions/extra_functions/rss_feed_guard.php';
 
-$language = require __DIR__ . '/../files/zc_plugins/RssFeed/v3.0.4/catalog/includes/languages/english/extra_definitions/lang.rss_feed.php';
+$language = require __DIR__ . '/../files/zc_plugins/RssFeed/v3.0.5/catalog/includes/languages/english/extra_definitions/lang.rss_feed.php';
 assert(is_array($language));
 assert(($language['TEXT_RSS_FEED'] ?? null) === 'RSS Feed');
 
