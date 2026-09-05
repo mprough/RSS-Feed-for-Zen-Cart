@@ -1,0 +1,6 @@
+##Run this UPGRADING for Zen cart 1.5.0 ONLY
+##Additionally remove files from previous versions in your admin folder.
+
+DELETE FROM admin_pages WHERE page_key='configRSSFeed';
+SELECT @t4:=configuration_group_id FROM configuration_group WHERE configuration_group_title = 'RSS Feed';
+INSERT INTO admin_pages (page_key,language_key,main_page,page_params,menu_key,display_on_menu,sort_order) VALUES ('configRSSFeed','BOX_CONFIGURATION_RSS_FEED','FILENAME_CONFIGURATION',CONCAT('gID=',@t4), 'configuration', 'Y', @t4);
