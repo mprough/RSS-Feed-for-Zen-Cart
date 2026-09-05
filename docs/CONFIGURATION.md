@@ -6,10 +6,25 @@ Settings are under **Configuration > RSS Feed**.
 | --- | ---: | --- |
 | Feed cache time | 15 minutes | Reuses generated XML instead of repeating catalog queries. |
 | Maximum request limit | 250 | Caps the public `limit` parameter. |
-| Requests per minute | 120 | Limits one IP address. Set to 0 only when another trusted layer provides throttling. |
+| Requests per minute | 30 | Limits one IP address. Set to 0 only when another trusted layer provides throttling. |
 | Default product limit | 100 | Controls feed size when `limit` is omitted. |
 
 The effective item count never exceeds the maximum request limit. Unknown query parameters and request-supplied tracking parameters are discarded so bots cannot manufacture unlimited cache files. Configured UTM values in the source remain supported.
+
+## Channel image
+
+`RSS image` is optional and accepts either:
+
+- A full `https://` image URL, such as `https://example.com/images/rss/channel.png`.
+- A path relative to the store's `images` directory, such as `rss/channel.png` for `/images/rss/channel.png`.
+
+The file must end in `.gif`, `.jpg`, `.jpeg`, or `.png`. A missing or invalid image is omitted from the channel.
+
+## Public contacts and inventory
+
+The managing editor, webmaster, and item author fields use the RSS 2.0 form `email@example.com (Name)`. These elements are optional. Any address included in a public feed can be harvested for spam, so the recommended default is blank. The plugin does not publish the store owner email automatically.
+
+When product availability is enabled, the feed publishes `in stock` or `out of stock`; it does not expose exact inventory quantities.
 
 ## Feed examples
 
