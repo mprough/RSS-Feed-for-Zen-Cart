@@ -1,5 +1,9 @@
 # Change history
 
+## 3.0.1, 2026-09-05
+
+- Converted the catalog language file to the required returned-array format. This prevents `ArraysLanguageLoader::loadArrayDefineFile()` from receiving integer `1` and causing an HTTP 500 on Zen Cart 2.1.x storefront pages immediately after installation.
+
 ## 3.0.0, 2026-09-05
 
 - Converted the loose-file release to an encapsulated Zen Cart Plugin Manager package.

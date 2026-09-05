@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
-require __DIR__ . '/../files/zc_plugins/RssFeed/v3.0.0/catalog/includes/functions/extra_functions/rss_feed_guard.php';
+require __DIR__ . '/../files/zc_plugins/RssFeed/v3.0.1/catalog/includes/functions/extra_functions/rss_feed_guard.php';
+
+$language = require __DIR__ . '/../files/zc_plugins/RssFeed/v3.0.1/catalog/includes/languages/english/extra_definitions/lang.rss_feed.php';
+assert(is_array($language));
+assert(($language['TEXT_RSS_FEED'] ?? null) === 'RSS Feed');
 
 $request = prowebs_rss_normalize_request([
     'feed' => 'products',
