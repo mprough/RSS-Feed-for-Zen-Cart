@@ -2,7 +2,7 @@
 
 RSS Feed generates RSS 2.0 feeds for Zen Cart products, categories, new products, best sellers, specials, featured products, upcoming products, and supported news installations.
 
-Version 3.0.4 modernizes the 2012 release for Zen Cart 2.0.x through 2.2.x and PHP 8.0 through 8.5. It is an encapsulated Plugin Manager package with no core or template overwrites.
+Version 3.0.5 modernizes the 2012 release for Zen Cart 2.0.x through 2.2.x and PHP 8.0 through 8.5. It is an encapsulated Plugin Manager package with no core or template overwrites.
 
 ## Bot and cache protection
 
@@ -36,3 +36,5 @@ Report reproducible bugs through the [PRO-Webs helpdesk](https://prowebsinc.zoho
 Originally created by Andrew Berezin, with portions from the Zen Cart and osCommerce teams. Modernized and maintained by Melanie Prough, [PRO-Webs, Inc.](https://pro-webs.net/).
 
 Distributed under GPL-2.0-only without warranty. See [LICENSE](LICENSE).
+
+The official listing is available in the [Zen Cart plugins directory](https://www.zen-cart.com/plugins/rss-feed-vb511).

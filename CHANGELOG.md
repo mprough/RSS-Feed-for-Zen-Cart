@@ -1,5 +1,11 @@
 # Change history
 
+## 3.0.5, 2026-09-05
+
+- Changed the feed response type from generic `text/xml` to the standard `application/rss+xml` type.
+- Cleared any earlier PHP cache headers before sending the configured RSS cache policy. This avoids conflicting application cache directives and reduces the chance of broad XML cache rules being applied to RSS responses.
+- Added the official Zen Cart plugin directory link and plugin ID 511.
+
 ## 3.0.4, 2026-09-05
 
 - Emit RSS directly from the page controller and exit before Zen Cart loads the storefront HTML template. This avoids template resolver differences that could still send the feed through the Bootstrap HTML page and fail on a core template path.
