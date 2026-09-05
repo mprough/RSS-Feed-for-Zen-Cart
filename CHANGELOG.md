@@ -1,5 +1,10 @@
 # Change history
 
+## 3.0.4, 2026-09-05
+
+- Emit RSS directly from the page controller and exit before Zen Cart loads the storefront HTML template. This avoids template resolver differences that could still send the feed through the Bootstrap HTML page and fail on a core template path.
+- Replaced the deprecated `zen_random_select()` call with `$db->ExecuteRandomMulti()` for random feeds on current Zen Cart releases.
+
 ## 3.0.3, 2026-09-05
 
 - Added clickable public feed links to the RSS Feed configuration page for shop owners.
