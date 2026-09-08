@@ -2,7 +2,7 @@
 
 RSS Feed generates RSS 2.0 feeds for Zen Cart products, categories, new products, best sellers, specials, featured products, upcoming products, and supported news installations.
 
-Version 3.0.5 modernizes the 2012 release for Zen Cart 2.0.x through 2.2.x and PHP 8.0 through 8.5. It is an encapsulated Plugin Manager package with no core or template overwrites.
+Version 3.0.6 modernizes the 2012 release for Zen Cart 2.0.x through 2.2.x and PHP 8.0 through 8.5. It is an encapsulated Plugin Manager package with no core or template overwrites.
 
 ## Bot and cache protection
 

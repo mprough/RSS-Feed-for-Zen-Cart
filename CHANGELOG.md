@@ -1,5 +1,9 @@
 # Change history
 
+## 3.0.6, 2026-09-08
+
+- Added direct-access guards to the internal storefront data, class, function, request-control, and page-loader files.
+
 ## 3.0.5, 2026-09-05
 
 - Changed the feed response type from generic `text/xml` to the standard `application/rss+xml` type.
