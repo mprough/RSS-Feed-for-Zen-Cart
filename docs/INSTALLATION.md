@@ -6,7 +6,7 @@ Back up the database and store files.
 
 ## Plugin Manager installation
 
-1. Copy the contents of the package `files` directory to the store root.
+1. Copy the package's `zc_plugins` directory to the store root.
 2. In Zen Cart admin, open **Modules > Plugin Manager**.
 3. Find **RSS Feed** and select **Install**.
 4. Open **Configuration > RSS Feed** and review the cache and request-control settings.
