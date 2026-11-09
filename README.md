@@ -1,5 +1,8 @@
 # RSS Feed for Zen Cart
 
+**Download the install ZIP:** [RSS-Feed-v3.0.6.zip](https://raw.githubusercontent.com/mprough/RSS-Feed-for-Zen-Cart/main/dist/RSS-Feed-v3.0.6.zip). Extract it on your computer and follow the installation instructions below.
+
+
 RSS Feed generates RSS 2.0 feeds for Zen Cart products, categories, new products, best sellers, specials, featured products, upcoming products, and supported news installations.
 
 Version 3.0.6 modernizes the 2012 release for Zen Cart 2.0.x through 2.2.x and PHP 8.0 through 8.5. It is an encapsulated Plugin Manager package with no core or template overwrites.
